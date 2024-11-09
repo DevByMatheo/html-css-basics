@@ -4,7 +4,7 @@
 
 <html>
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Restaurant</title>
         <link rel="stylesheet" href="style.css"/>
         <!--Google Fonts-->
@@ -94,6 +94,54 @@
                         </ul>
                     </section>
                 </div>
+            
+            <table>
+                <caption>Menu du jour :</caption>
+                <tr>
+                    <th>Menu 1</th>
+                    <th>Menu 2</th>
+                    <th>Menu 3</th>
+                </tr>
+                <tr>
+                    <td>Soupe aux 5 légumes</td>
+                    <td>Salade Japonaise</td>
+                    <td>Brick de ton</td>
+                </tr>
+                <tr>
+                    <td>Potiron au four</td>
+                    <td>Blaquette de poulet</td>
+                    <td>Pommes de terre farcis</td>
+                </tr>
+                <tr>
+                    <td>Tiramisu</td>
+                    <td>Mousse dessert</td>
+                    <td>Cake Sucré</td>
+                </tr>
+            </table>
+
+            <section>
+                <form action="" method="get"> <!--method="post"-->
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <label for="prenom">Votre prénom</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Ex. : Mathieu" size="30" maxlength="20">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" name="nom" id="nom" placeholder="Ex. : Dupond" size="30" maxlength="20">
+                        <label for="email">Votre mail</label>
+                        <input type="email" name="email" id="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <label for="questions"> Vos questions</label>
+                        <textarea id="questions" rows="4" autofocus></textarea>
+                        <div>Comment sougaitez vous être contacté ?</div>
+                        <input type="radio" name="preference" value="tel" id="tel"/><label for="tel">Par téléphone</label>
+                        <input type="radio" name="preference" value="mail" id="mail"/><label for="mail">Par email</label>
+                    </fieldset>
+                    <input type="submit" value="Envoyer"/>
+                </form>
+                <!--https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061492-creez-des-formulaires#/id/r-8061478-->
+            </section>
 
             </main>
 
