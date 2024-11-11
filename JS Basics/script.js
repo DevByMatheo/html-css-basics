@@ -22,11 +22,9 @@ if(nom == "Mathéo") {
 
     if(0 < age && age <= 18 ) {
         document.write("<br> Vous êtes mineur");
-    }
-    else if( age >= 18 ) {
+    } else if( age >= 18 ) {
         document.write("<br> Vous êtes majeurs");
-    }
-    else {
+    } else {
         document.write("Vous avez menti sur votre age"); 
     }
     
