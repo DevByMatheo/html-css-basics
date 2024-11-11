@@ -48,3 +48,27 @@ switch(nom) {
         alert("<br> Pas OK");
         break;
 }
+
+// boucle 
+
+let i = 0; 
+
+while (i < 5) {
+    document.write("a");
+    i++;
+}
+
+
+let j = 10;
+do {
+    document.write( j );
+} while( j < 10 );
+
+
+for( let i = 0 ; i < 5 ;i++) {
+    document.write("<br> a");
+    if ( i % 2 == 1) { // impair
+        continue;
+    }
+    document.write("b ");
+}
