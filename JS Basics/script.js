@@ -13,6 +13,8 @@
 // === Egalité valeur et type / !== type ou valeur -> True
 
 
+// variable condition et opératuer
+
 let nom = "Mathéo";
 
 if(nom == "Mathéo") {
@@ -20,12 +22,15 @@ if(nom == "Mathéo") {
     let age = prompt("Comment âges as tu ? ");
     age = parseInt(age);
 
-    if(0 < age && age <= 18 ) {
+    if( 0 < age && age <= 18 ) {
         document.write("<br> Vous êtes mineur");
+
     } else if( age >= 18 ) {
         document.write("<br> Vous êtes majeurs");
+
     } else {
         document.write("Vous avez menti sur votre age"); 
+
     }
     
     // ou
@@ -49,6 +54,7 @@ switch(nom) {
         break;
 }
 
+
 // boucle 
 
 let i = 0; 
@@ -70,5 +76,38 @@ for( let i = 0 ; i < 5 ;i++) {
     if ( i % 2 == 1) { // impair
         continue;
     }
-    document.write("b ");
+    document.write("b <br>");
 }
+
+
+// fonction
+
+function sum(nb1, nb2 = 10) {
+    let data = nb1 + nb2;
+
+    function result() {
+        return data;
+    };
+        
+    return result();
+};
+
+document.write(sum(1)) ;
+
+// ou
+
+let somme = function calcul(nb1, nb2 = 10) {
+    let data = nb1 + nb2;
+
+    function result() {
+        return data;
+    };
+        
+    return result();
+};
+
+document.write(somme(1)) ;
+
+//let sum2 = function(x, y){return x + y;}; ou
+let sum2 = (x, y) => {return x + y};
+document.write(sum2(1,9));
